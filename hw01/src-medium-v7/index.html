@@ -200,7 +200,7 @@
     <script type="text/javascript" charset="utf-8">
         d3.text("../data.csv").then((data) => {
 
-            const parsedCSV = d3.csvparseRows(data);
+            const parsedCSV = d3.csvParseRows(data);
 
             const container = d3.select("#div2")
                 .append("table")
