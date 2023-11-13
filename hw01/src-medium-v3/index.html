@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<!-- saved from url=(0070)https://tjhsieh.github.io/c/vis/vis2023f/hw01/src-medium-v3/index.html -->
 <html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <script src="./index_files/d3.v3.min.js"></script>
+    <script src="./d3.v3.min.js"></script>
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap'); */
-
         @font-face {
             font-family: 'CircleFont';
-            /* src: url(https://circle472.github.io/ct2022s/hw04/CircleFont.ttf);  https://github.com/circle472/ct2022s/ */
             src: url(CircleFont_v2.woff2);
-            /* https://cloudconvert.com/ttf-to-woff2 */
         }
 
         h3 {
@@ -203,12 +198,11 @@
     </div>
 
     <script type="text/javascript" charset="utf-8">
-
         d3.text("../data.csv", function (data) {
 
             //var parsedCSV = d3.csv.parseRows(data);
             parsedCSV = d3.csv.parseRows(data);
-            //console.log(parsedCSV);
+            // console.log(parsedCSV);
 
             var container = d3.select("#div2")
                 .append("table")
