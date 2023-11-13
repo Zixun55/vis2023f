@@ -216,7 +216,7 @@
                 .html(function (d, i) {
                     if (i == 4 && d != 'GitHub 帳號') {
                         var photo = '../photo/' + Math.floor(Math.random() * 3) + '.png';
-                        return `<img src="${imageSource}" class="img-size"><hr><a href="https://github.com/${d}/vis2023f/" target="_blank">${d}</a>`;
+                        return `<img src="${photo}" class="img-size"><hr><a href="https://github.com/${d}/vis2023f/" target="_blank">${d}</a>`;
                     }
                     else if (i == 0 || i == 2 || isNaN(d)) {
                         return d;
