@@ -6,13 +6,13 @@ function _1(md) {
 
 function _artistver(__query, FileAttachment, invalidation) {
   return (
-    __query(FileAttachment("../artistVer.csv"), { from: { table: "artistVer" }, sort: [], slice: { to: null, from: null }, filter: [], select: { columns: null } }, invalidation)
+    __query(FileAttachment("artistVer.csv"), { from: { table: "artistVer" }, sort: [], slice: { to: null, from: null }, filter: [], select: { columns: null } }, invalidation)
   )
 }
 
 function _artistpublic(__query, FileAttachment, invalidation) {
   return (
-    __query(FileAttachment("../artistPublic.csv"), { from: { table: "artistPublic" }, sort: [], slice: { to: null, from: null }, filter: [], select: { columns: null } }, invalidation)
+    __query(FileAttachment("artistPublic.csv"), { from: { table: "artistPublic" }, sort: [], slice: { to: null, from: null }, filter: [], select: { columns: null } }, invalidation)
   )
 }
 
